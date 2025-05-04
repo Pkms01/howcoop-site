@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>HOWCOOP 메인</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-blue-900 text-white px-4 py-3 flex justify-between items-center sticky top-0 z-20">
+    <span class="font-bold text-lg">HOWCOOP</span>
+    <button onclick="toggleSidebar()" class="text-2xl">☰</button>
+  </header>
+  <aside id="sidebar" class="fixed top-0 left-[-260px] w-64 h-full bg-white shadow-lg transition-all duration-300 z-30 p-5">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-semibold">메뉴</h2>
+      <button onclick="toggleSidebar()" class="text-xl">✕</button>
+    </div>
+    <ul class="space-y-3 text-gray-800">
+      <li><a href="courses.html">강의</a></li>
+      <li><a href="about.html">소개</a></li>
+      <li><a href="apply.html">신청</a></li>
+    </ul>
+  </aside>
+  <main class="px-4 pt-6 pb-24 max-w-3xl mx-auto">
+    <h2 class="text-xl font-bold mb-4">HOWCOOP 소개</h2>
+    <p>HOWCOOP은 협동조합을 통해 함께 배우고 성장하는 플랫폼입니다.<br/>강의 탐색은 <a href="courses.html" class="text-blue-600 underline">여기</a>에서 시작하세요.</p>
+  </main>
+  <footer class="fixed bottom-0 left-0 right-0 bg-blue-900 text-white flex justify-around items-center h-14 text-sm z-20">
+    <a href="index.html">홈</a>
+    <a href="courses.html">강의</a>
+    <a href="apply.html">신청</a>
+  </footer>
+</body>
+</html>

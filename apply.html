@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>강의 신청</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
+
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-blue-900 text-white px-4 py-3 flex justify-between items-center sticky top-0 z-20">
+    <span class="font-bold text-lg">HOWCOOP</span>
+    <button onclick="toggleSidebar()" class="text-2xl">☰</button>
+  </header>
+  <main class="max-w-md mx-auto px-4 py-6">
+    <h2 class="text-xl font-bold mb-4">강의 신청하기</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="이름" class="w-full p-3 border rounded" />
+      <input type="tel" placeholder="연락처" class="w-full p-3 border rounded" />
+      <input type="email" placeholder="이메일" class="w-full p-3 border rounded" />
+      <select class="w-full p-3 border rounded">
+        <option>강의 선택</option>
+        <option>협동조합 입문</option>
+      </select>
+      <label class="flex items-center">
+        <input type="checkbox" required />
+        <span class="ml-2 text-sm">약관에 동의합니다.</span>
+      </label>
+      <button class="w-full bg-green-600 text-white py-3 rounded-md text-lg">신청하기</button>
+    </form>
+  </main>
+  <footer class="fixed bottom-0 left-0 right-0 bg-blue-900 text-white flex justify-around items-center h-14 text-sm z-20">
+    <a href="index.html">홈</a>
+    <a href="courses.html">강의</a>
+    <a href="apply.html">신청</a>
+  </footer>
+</body>
+</html>
